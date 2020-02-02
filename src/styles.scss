@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./../node_modules/angular2-multiselect-dropdown/themes/default.theme.css";
+
+.logo {
+  cursor: pointer !important;
+  
+  color: whitesmoke !important;
+}
+
+.logincard {
+  max-width: 35% !important;
+  margin: 5% 31% !important;
+}
+
+.card-footer {
+  padding: 0.25rem 1.25rem !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.cs {
+  background: #2980b9; 
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9); 
+  background: linear-gradient(
+  to left,
+  #ffffff,
+  #6dd5fa,
+  #2980b9
+  ); }
+
+  body {
+    padding-top: 65px !important;
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      padding-top: 100px !important;
+    }
+  }
+
+  .titl {
+    font-family: sans-serif !important;
+    color: cadetblue !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    text-decoration: underline !important;
+  }
+  

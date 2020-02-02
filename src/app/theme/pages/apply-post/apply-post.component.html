@@ -1,0 +1,53 @@
+<div class="row d-flex  justify-content-center align-items-center">
+    <h5 class="titl">Apply Post</h5>
+
+</div>
+
+<div class="d-flex justify-content-center align-items-center container">
+  <div class="card w-75 mrg-btm">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12 col-md-10">
+          <p class="label text-muted"><span class="font job-title"> {{title}} </span> </p>
+          <p class="label text-muted"> <i class="far fa-building"></i><span
+              class="font company-name">{{companyName}}</span></p>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="float-right pl-1">
+            <img style="width: 6vh !important;" src="{{logo}}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <span class="label text-muted"><i class="fas fa-map-marker-alt"></i>
+            <span class="font company-name">{{location}}</span>
+          </span>
+        </div>
+        <div class="col">
+          <span class="label text-muted"><i class="fas fa-briefcase"></i>
+            <span class="font company-name">{{experiance}}
+              years</span>
+          </span>
+        </div>
+        <div class="col">
+          <span class="label text-muted"><i class="far fa-money-bill-alt"></i>
+            <span class="font company-name">$
+              {{salary}}</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      <div class="row">
+        <label>Job Description :</label>
+        <div class="col">
+          {{jobDesc}}
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <button type="button" class="btn btn-success" [routerLink]="[ '' ]">Apply</button>
+    </div>
+  </div>
+</div>

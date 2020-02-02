@@ -1,0 +1,25 @@
+<div class="card" style="width: 22rem;">
+  <div class="card-body">
+    <div class="card-block text-center">
+      <i class="fa fa-filter filter-icon clr"></i>
+      <span class="card-title font-weight-bold filter clr"> Filters</span>
+    </div>
+    <br>
+
+    <b>
+      Select Category
+    </b>
+    <angular2-multiselect [data]="categoryList" [(ngModel)]="selectedCategories" [settings]="categorySettings"
+      (onSelect)="onCategorySelect($event)" (onDeSelect)="onCategoryDeSelect($event)"
+      (onSelectAll)="onCategorySelectAll($event)" (onDeSelectAll)="onCategoryDeSelectAll($event)">
+    </angular2-multiselect>
+    <br>
+    <b>
+      Select Location
+    </b>
+    <angular2-multiselect [data]="locationList" [(ngModel)]="selectedLocations" [settings]="locationSettings"
+      (onSelect)="onLocationSelect($event)" (onDeSelect)="onLocationDeSelect($event)"
+      (onSelectAll)="onLocationSelectAll($event)" (onDeSelectAll)="onLocationDeSelectAll($event)">
+    </angular2-multiselect>
+  </div>
+</div>

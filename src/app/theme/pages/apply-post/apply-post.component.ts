@@ -17,6 +17,8 @@ export class ApplyPostComponent implements OnInit {
   public address = 'NA';
   public jobDesc = 'NA'
   public post;
+  public joiningDate;
+  public timings;
 
   constructor(public activatedRoute: ActivatedRoute) {
     this.activatedRoute.params.subscribe(params => {
@@ -29,14 +31,16 @@ export class ApplyPostComponent implements OnInit {
   ngOnInit() {
 
 
-    this.title =this.post.title;
+    this.title = this.post.title;
     this.experiance = this.post.experiance;
     this.salary = this.post.salary;
     this.address = this.post.details.address;
     this.location = this.post.details.city;
     this.logo = this.post.details.companyLogo;
     this.companyName = this.post.details.name;
-    this.jobDesc = this.post.jobDescription
+    this.jobDesc = this.post.jobDescription;
+    this.joiningDate = this.post.joiningDate;
+    this.timings = this.post.jobTimings;
   }
 
 }

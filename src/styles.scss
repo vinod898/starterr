@@ -3,7 +3,7 @@
 
 .logo {
   cursor: pointer !important;
-  
+
   color: whitesmoke !important;
 }
 
@@ -19,30 +19,40 @@
 }
 
 .cs {
-  background: #2980b9; 
-  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9); 
-  background: linear-gradient(
-  to left,
-  #ffffff,
-  #6dd5fa,
-  #2980b9
-  ); }
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to left, #ffffff, #6dd5fa, #2980b9);
+}
 
+body {
+  padding-top: 65px !important;
+}
+
+@media screen and (min-width: 768px) {
   body {
-    padding-top: 65px !important;
+    padding-top: 100px !important;
   }
-  
-  @media screen and (min-width: 768px) {
-    body {
-      padding-top: 100px !important;
-    }
-  }
+}
 
-  .titl {
-    font-family: sans-serif !important;
-    color: cadetblue !important;
-    font-weight: 500 !important;
-    font-style: italic !important;
-    text-decoration: underline !important;
-  }
-  
+.titl {
+  color: cadetblue !important;
+  font-weight: 500 !important;
+}
+
+body,
+html {
+  font-family: "Roboto" !important;
+}
+
+.dropdown-item {
+  display: block !important;
+  width: 100% !important;
+  padding: 0.15rem 0.5rem !important;
+  clear: both !important;
+  font-weight: 400 !important;
+  color: #212529 !important;
+  text-align: inherit !important;
+  white-space: nowrap !important;
+  background-color: transparent !important;
+  border: 0 !important;
+}

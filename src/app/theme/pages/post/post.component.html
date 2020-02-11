@@ -1,152 +1,123 @@
-<h5 class="titl">Create Post</h5>
-<form class="card w-100 pd">
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label lbl">Popular Titles</label>
-    <div class="col-md-8">
-      <div class="form-group">
-        <tag-input [(ngModel)]='popular' [disable]="true" [ngModelOptions]="{standalone: true}" placeholder="">
-        </tag-input>
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <!-- <label class="lbl" for="">Title</label> -->
-      <input type="text" class="form-control" placeholder="Title">
-    </div>
-    <div class="form-group col-md-6">
-      <!-- <label class="lbl" for="">Location</label> -->
-      <input type="text" class="form-control" placeholder="Job Location">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label class="lbl" for="">Date</label>
-      <input type="date" class="form-control" placeholder="date">
-    </div>
-    <div class="form-group col-md-6">
-      <label class="lbl" for="">Time</label>
-      <input type="time" class="form-control" placeholder="Time">
-    </div>
-  </div>
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0 lbl">Salary</legend>
-      <div class="col-sm-8">
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios12" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            Hourly
-          </label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios13" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Daily
-          </label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios14" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Monthly
-          </label>
+<span class="d-flex justify-content-around">
+  <h4 class="titl">Create Post</h4>
+</span>
+<!-- preview form -->
+<div class="d-flex justify-content-center align-items-center container">
+  <form class="card w-100 pd">
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label lbl">Popular Titles</label>
+      <div class="col-md-6">
+        <div class="form-group">
+          <tag-input [disable]="true" placeholder="">
+          </tag-input>
         </div>
       </div>
     </div>
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0 lbl">Job</legend>
-      <div class="col-sm-8">
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios212" id="gridRadios1" value="option3" checked>
-          <label class="form-check-label" for="gridRadios1">
-            Part Time
-          </label>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <!-- <label class="lbl" for="">Title</label> -->
+        <input type="text" class="form-control" placeholder="Title" [(ngModel)]="form.title" name="title"
+          [readonly]=preview autofocus>
+      </div>
+      <div class="form-group col-md-6">
+        <!-- <label class="lbl" for="">Location</label> -->
+        <input type="text" class="form-control" [(ngModel)]="form.location" placeholder="Job Location" name="location"
+          [readonly]="preview" autofocus>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label class="lbl" for="">Date</label>
+        <input type="date" class="form-control" [(ngModel)]="form.date" placeholder="date" name="date"
+          [readonly]="preview">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="lbl" for="">Time</label>
+        <input type="time" class="form-control" [(ngModel)]="form.time" placeholder="Time" name="time"
+          [readonly]="preview">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <!-- <label class="lbl" for="inputEmail4">Known Language</label> -->
+        <div class="form-group">
+          <tag-input [(ngModel)]='form.languages' [disable]="preview" [ngModelOptions]="{standalone: true}"
+            [placeholder]="'languages'" [secondaryPlaceholder]="'Add languages'" name="language" maxItems=5 autofocus>
+          </tag-input>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios22" id="gridRadios2" value="option4">
-          <label class="form-check-label" for="gridRadios2">
-            Full Time
-          </label>
+      </div>
+      <div class="form-group col-md-6">
+        <!-- <label class="lbl" for="inputPassword4">Additional</label> -->
+        <div class="form-group">
+          <tag-input name="additional" [disable]="preview" [placeholder]="'additional'"
+            [secondaryPlaceholder]="'Add additional'" [(ngModel)]='form.additional' name="additional" maxItems=5
+            autofocus>
+          </tag-input>
         </div>
       </div>
     </div>
-  </fieldset>
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0 lbl">Gender</legend>
-      <div class="col-sm-8">
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios6" id="gridRadios1" value="option5" checked>
-          <label class="form-check-label" for="gridRadios1">
-            Male
-          </label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios7" id="gridRadios2" value="option6">
-          <label class="form-check-label" for="gridRadios2">
-            Female
-          </label>
+    <div class="dropdown-divider"></div>
+    <div class="form-row">
+      <div class="col-md-1">
+        <span class="lbl">Salary</span>
+      </div>
+      <div class="form-group col-md-5">
+        <label class="radio-inline mr-3">
+          <input type="radio" [(ngModel)]="form.salaryType" value="hour" name="hourly" [disabled]="preview"
+            checked><span class="mlp">Hourly</span>
+        </label>
+        <label class="radio-inline mr-3"><input type="radio" [(ngModel)]="form.salaryType" value="daily" name="daily"
+            [disabled]="preview"><span class="mlp">Daily</span></label>
+        <label class="radio-inline mr-3"><input type="radio" [(ngModel)]="form.salaryType" value="monthly"
+            name="monthly" [disabled]="preview"> <span class="mlp">Monthly</span></label>
+      </div>
+      <div class="col-md-1">
+        <span class="lbl mr-2">Job</span>
+      </div>
+      <div class="form-group col-md-5">
+        <label class="radio-inline mr-3"><input type="radio" [(ngModel)]="form.jobType" name="partTime"
+            [disabled]="preview" checked> <span class="mlp">Part Time</span></label>
+        <label class="radio-inline mr-3"><input type="radio" [(ngModel)]="form.jobType" name="fulTime" value="fulTime"
+            [disabled]="preview"> <span class="mlp">Full Time</span> </label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-1">
+        <span class="lbl">Gender</span>
+      </div>
+      <div class="form-group col-md-5">
+        <label class="radio-inline mr-3"><input type="radio" name="male" value="male" [(ngModel)]="form.gender"
+            [disabled]="preview" checked> <span class="mlp">Male</span></label>
+        <label class="radio-inline mr-3"><input type="radio" name="female" value="female" [(ngModel)]="form.gender"
+            [disabled]="preview"> <span class="mlp">Female</span> </label>
+      </div>
+      <div class="col-md-1">
+        <span class="lbl">Experience</span>
+      </div>
+      <div class="form-group col-md-4">
+        <label class="radio-inline mr-3"><input type="radio" [(ngModel)]="form.experience" name="one" value="one"
+            [disabled]="preview" checked> <span class="mlp">0-1 years</span> </label>
+        <label class="radio-inline mr-3"><input type="radio" [(ngModel)]="form.experience" name="two" value="three"
+            [disabled]="preview"> <span class="mlp">1-3 years</span> </label>
+        <label class="radio-inline mr-3"><input type="radio" [(ngModel)]="form.experience" name="four" value="four"
+            [disabled]="preview"> <span class="mlp">3-5 years</span></label>
+      </div>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label lbl">Tell More</label>
+      <div class="col-md-8">
+        <div class="form-group">
+          <textarea class="form-control" [(ngModel)]='form.moreInfo' name="more" rows="2" placeholder="Tell More"
+            [disabled]="preview" autofocus></textarea>
         </div>
       </div>
     </div>
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0 lbl">Experience</legend>
-      <div class="col-sm-8">
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option7" checked>
-          <label class="form-check-label" for="gridRadios1">
-            0-1 Years
-          </label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option8">
-          <label class="form-check-label" for="gridRadios2">
-            1-3 Years
-          </label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios2" value="option9">
-          <label class="form-check-label" for="gridRadios2">
-            3-5 Years
-          </label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios2" value="option10">
-          <label class="form-check-label" for="gridRadios2">
-            5-8 Years
-          </label>
-        </div>
-      </div>
+    <div class="my-footer text-muted text-right ">
+      <button class="btn btn-sm btn-primary mr-1" (click)="showPreview('preview')" *ngIf="!preview">Preview</button>
+      <button type="submit" class="btn btn-sm btn-primary mr-1" (click)="showPreview('preview')"
+        *ngIf="preview">submit</button>
+      <button type="info" class="btn btn-sm btn-primary" (click)="showPreview('edit')">Cancel</button>
     </div>
-  </fieldset>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label class="lbl" for="inputEmail4">Known Language</label>
-      <div class="form-group">
-        <tag-input [(ngModel)]='languages' [ngModelOptions]="{standalone: true}" placeholder="">
-        </tag-input>
-      </div>
-    </div>
-    <div class="form-group col-md-6">
-      <label class="lbl" for="inputPassword4">Additional</label>
-      <div class="form-group">
-        <tag-input [(ngModel)]='additional' [ngModelOptions]="{standalone: true}" placeholder="">
-        </tag-input>
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label lbl">Tell More</label>
-    <div class="col-md-10">
-      <div class="form-group">
-        <textarea class="form-control" rows="2" placeholder="Tell More"></textarea>
-      </div>
-    </div>
-  </div>
-</form>
-<div class="d-flex justify-content-center mt-1">
-  <div class="mr-1">
-    <button type="submit" class="btn btn-sm btn-primary">Preview</button>
-  </div>
-  <button type="info" class="btn btn-sm btn-primary">Cancel</button>
+  </form>
 </div>

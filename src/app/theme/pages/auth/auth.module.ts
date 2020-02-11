@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { SignInModule } from './sign-in/sign-in.module';
 import { RegisterModule } from './register/register.module';
+import { ForgotPasswordModule } from './forgot-password/forgot-password.module';
 
 
 const routes: Routes = [
@@ -21,6 +22,10 @@ const routes: Routes = [
         path: 'registration',
         loadChildren: () => RegisterModule
       },
+      {
+        path: 'forgotPassword',
+        loadChildren: () => ForgotPasswordModule
+      }
     ]
   }
 ];

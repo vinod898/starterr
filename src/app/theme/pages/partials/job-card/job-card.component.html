@@ -1,4 +1,4 @@
-<div class="card w-75 mrg-btm">
+<div class="card mrg-btm" [style.width.%]=width>
   <div class="card-body">
     <div class="container">
       <div class="row">
@@ -32,12 +32,33 @@
           </span>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <span class="label text-muted"><i class="far fa-clock"></i>
+            <span class="font company-name">{{timings}}</span>
+          </span>
+        </div>
+        <div class="col">
+          <span class="label text-muted"><i class="far fa-calendar-alt"></i>
+            <span class="font company-name">
+              <span style="color: darkgray">Joining date</span>
+              {{joiningDate | date: 'dd/MM/yyyy'}}
+            </span>
+          </span>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <i class="far fa-bookmark" data-toggle="tooltip" data-placement="bottom" title="Bookmark job"
+            (click)="saveJob(companyName)" *ngIf="save==true"></i>
+          <i class="fas fa-bookmark" data-toggle="tooltip" data-placement="bottom" title="Remove bookmark"
+            (click)="unsaveJob(companyName)" *ngIf="showsaved==true"></i>
+        </div>
+      </div>
     </div>
   </div>
   <div class="card-footer text-muted">
     <div class="row">
-      <div class="col-8 border-right days">{{noOfDays}} days ago</div>
-      <div class="col-4 d-flex justify-content-end view" (click)="view()">View Job</div>
+      <div class="col-6 border-right days">Expires in: {{noOfDays}} days </div>
+      <div class="col-6 d-flex justify-content-end view" (click)="view()">View Job</div>
     </div>
   </div>
 </div>

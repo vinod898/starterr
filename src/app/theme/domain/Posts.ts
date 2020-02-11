@@ -7,5 +7,7 @@ export interface Posts {
     salary: number;
     jobDescription: string;
     postDate: number;
+    joiningDate:number;
+    jobTimings:string;
     details: CompanyDetails;
 }

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "e6308026-e854-4027-a03f-b04ad8b215a6",
+        "title": "Administrative Manager",
+        "experiance": 1,
+        "salary": 1500.0,
+        "jobDescription": "The IT Support team maintains the computer networks of all types of organisations, providing technical support and ensuring the whole company runs smoothly. IT Support monitors and maintains the company computer systems, installs and configures hardware and software, and solves technical problems. Because of the nature of the job, some companies may require their IT Support to undertake shift work.",
+        "details": {
+            "name": "Freddie Mac",
+            "address": "8200 Jones Branch Dr., McLean, VA 22102",
+            "city": "McLean",
+            "fullname": "Freddie Mac",
+            "country": null,
+            "state": "VA",
+            "web": "http://www.freddiemac.com",
+            "companyLogo": "src/assets/logos/Freddie Mac.png"
+        },
+        "postDate": 1575245182738,
+        "joiningDate": 1583992589469,
+        "jobTimings": "10:30 am - 6pm"
+    },
+    {
+        "id": "1e7d4534-bd11-437f-aa21-f654c461983b",
+        "title": "Office Assistant",
+        "experiance": 2,
+        "salary": 3000.0,
+        "jobDescription": "The IT Support team maintains the computer networks of all types of organisations, providing technical support and ensuring the whole company runs smoothly. IT Support monitors and maintains the company computer systems, installs and configures hardware and software, and solves technical problems. Because of the nature of the job, some companies may require their IT Support to undertake shift work.",
+        "details": {
+            "name": "CVS Health Corporation",
+            "address": "1 CVS Dr., Woonsocket, RI 02895",
+            "city": "Woonsocket",
+            "fullname": "CVS Health Corporation",
+            "country": null,
+            "state": "RI",
+            "web": "http://www.cvshealth.com",
+            "companyLogo": "src/assets/logos/CVS Health.png"
+        },
+        "postDate": 1573439668353,
+        "joiningDate": 1584510989470,
+        "jobTimings": "10:30 am - 6pm"
+    },
+    {
+        "id": "46327b65-027f-4e5b-9e8b-1d81fad92b8f",
+        "title": "Account Collector",
+        "experiance": 2,
+        "salary": 3000.0,
+        "jobDescription": "The IT Support team maintains the computer networks of all types of organisations, providing technical support and ensuring the whole company runs smoothly. IT Support monitors and maintains the company computer systems, installs and configures hardware and software, and solves technical problems. Because of the nature of the job, some companies may require their IT Support to undertake shift work.",
+        "details": {
+            "name": "Express Scripts Holding Company",
+            "address": "1 Express Way, St. Louis, MO 63121",
+            "city": "St. Louis",
+            "fullname": "Express Scripts Holding Company",
+            "country": null,
+            "state": "MO",
+            "web": "http://www.express-scripts.com",
+            "companyLogo": "src/assets/logos/Express Scripts Holding.png"
+        },
+        "postDate": 1574961533229,
+        "joiningDate": 1583214989470,
+        "jobTimings": "9am - 7pm"
+    },
+    {
+        "id": "7f568936-aa4c-4cb4-a562-1e4a66d63af7",
+        "title": "Account Collector",
+        "experiance": 4,
+        "salary": 6000.0,
+        "jobDescription": "The IT Support team maintains the computer networks of all types of organisations, providing technical support and ensuring the whole company runs smoothly. IT Support monitors and maintains the company computer systems, installs and configures hardware and software, and solves technical problems. Because of the nature of the job, some companies may require their IT Support to undertake shift work.",
+        "details": {
+            "name": "The Boeing Company",
+            "address": "100 N. Riverside Plaza, Chicago, IL 60606",
+            "city": "Chicago",
+            "fullname": "The Boeing Company",
+            "country": null,
+            "state": "IL",
+            "web": "http://www.boeing.com",
+            "companyLogo": "src/assets/logos/Boeing.png"
+        },
+        "postDate": 1573255896427,
+        "joiningDate": 1582523789470,
+        "jobTimings": "9am - 7pm"
+    }
+]

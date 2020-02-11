@@ -1,6 +1,5 @@
 <div class="row d-flex  justify-content-center align-items-center">
-    <h5 class="titl">Apply Post</h5>
-
+  <h4 class="titl">Apply Post</h4>
 </div>
 
 <div class="d-flex justify-content-center align-items-center container">
@@ -36,6 +35,22 @@
               {{salary}}</span>
           </span>
         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <span class="label text-muted"><i class="far fa-clock"></i>
+            <span class="font company-name">{{timings}}</span>
+          </span>
+        </div>
+        <div class="col">
+          <span class="label text-muted"><i class="far fa-calendar-alt"></i>
+            <span class="font company-name">
+              <span style="color: darkgray">Joining date</span>
+              {{joiningDate | date: 'dd/MM/yyyy'}}
+            </span>
+          </span>
+        </div>
+        <div class="col"></div>
       </div>
     </div>
     <div class="card-footer text-muted">

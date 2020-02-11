@@ -9,8 +9,8 @@
         <div class="input-group mb-4">
           <input type="password" class="form-control" placeholder="Password">
         </div>
-        <button class="btn btn-block btn-primary mb-4">Signin</button>
-        <p class="mb-2 text-muted">Forgot password? <a [routerLink]="['auth/reset-password']" class="f-w-400">Reset</a>
+        <button class="btn btn-block btn-primary mb-4" [routerLink]="['']">Signin</button>
+        <p class="mb-2 text-muted">Forgot password? <a [routerLink]="['/auth/forgotPassword']" class="f-w-400">Reset</a>
         </p>
         <p class="mb-0 text-muted">Don’t have an account? <a [routerLink]="['/auth/registration']"
             class="f-w-400">Signup</a>
